@@ -7,7 +7,8 @@ var eu = {
     Efunjs: 'https://res-download.vsplay.com/res_eu/common/js/Efun.js',
     proUrl: 'https://activity.efun.com/',
     loginServerUrl: 'https://login.efun.com/',
-    gameServerUrl: 'https://game.efun.com/'
+    gameServerUrl: 'https://game.efun.com/',
+    dns: 'https://res-download.vsplay.com'
 }
 var tw = {
     jquery: 'https://restw-download.vsplay.com/res_tw/common/js/jquery/jquery-1.7.js',
@@ -17,7 +18,8 @@ var tw = {
     Efunjs: 'https://restw-download.vsplay.com/res_tw/common/js/gw/Efun-v1.js',
     proUrl: 'https://activity.efuntw.com/',
     loginServerUrl: 'https://login.efuntw.com/',
-    gameServerUrl: 'https://game.efuntw.com/'
+    gameServerUrl: 'https://game.efuntw.com/',
+    dns: 'https://restw-download.vsplay.com'
 }
 var kr = {
     jquery: 'https://reskr-download.vsplay.com/res_kr/common/js/jquery/jquery-1.7.js',
@@ -29,7 +31,8 @@ var kr = {
     loginServerUrl: 'https://login.efunkr.com/',
     gameServerUrl: 'https://game.efunkr.com/',
     navCss: 'https://reskr-download.vsplay.com/res_kr/common/sdk/nav/css/nav.3.0.0.css',
-    navJs: 'https://reskr-download.vsplay.com/res_kr/common/sdk/nav/nav-sdk.3.0.1.min.js'
+    navJs: 'https://reskr-download.vsplay.com/res_kr/common/sdk/nav/nav-sdk.3.0.1.min.js',
+    dns: 'https://restw-download.vsplay.com'
 }
 var sa = {
     jquery: 'https://ressa-download.vsplay.com/res_sa/common/js/jquery/jquery-1.7.js',
@@ -41,7 +44,8 @@ var sa = {
     loginServerUrl: 'https://login.efunsa.com/',
     gameServerUrl: 'https://game.efunsa.com/',
     navCss: 'https://ressa-download.vsplay.com/res_sa/common/sdk/nav/css/nav.3.0.0.css',
-    navJs: 'https://ressa-download.vsplay.com/res_sa/common/sdk/nav/nav-sdk.3.0.1.min.js'
+    navJs: 'https://ressa-download.vsplay.com/res_sa/common/sdk/nav/nav-sdk.3.0.1.min.js',
+    dns: 'https://ressa-download.vsplay.com'
 }
 var us = {
     jquery: 'https://res-download.vsplay.com/res_sa/common/js/jquery/jquery-1.7.js',
@@ -53,7 +57,8 @@ var us = {
     loginServerUrl: 'https://login.efun.com/',
     gameServerUrl: 'https://game.efun.com/',
     navCss: 'https://res-download.vsplay.com/res_us/common/sdk/nav/css/nav.3.0.0.css',
-    navJs: 'https://res-download.vsplay.com/res_us/common/sdk/nav/nav-sdk.3.0.1.min.js'
+    navJs: 'https://res-download.vsplay.com/res_us/common/sdk/nav/nav-sdk.3.0.1.min.js',
+    dns: 'https://res-download.vsplay.com'
 }
 var fbId = {
     twszqy: '323832348105349',
@@ -72,5 +77,7 @@ module.exports = {
     eu: eu,
     tw: tw,
     kr: kr,
-    fbId: fbId
+    fbId: fbId,
+    sa: sa,
+    us: us
 }
