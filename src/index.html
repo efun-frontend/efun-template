@@ -30,11 +30,16 @@
     <link rel="stylesheet" href="./css/index.css?rev=@@hash">
 
     <!-- cdn lib js -->
-    <script src="https://reskr-download.vsplay.com/res_kr/common/js/jquery/jquery.min.js"></script>
-    <script src="https://reskr-download.vsplay.com/res_kr/common/sdk/nav/nav-sdk.3.0.2.min.js"></script>
+    <script src="{{jquery}}"></script>
+    <script src="{{bpopup}}"></script>
+    <script src="{{cookie}}"></script>
+    <script src="{{user_api}}"></script>
+    {% if navJs %}
+    <script src="{{navJs}}"></script>{% endif %}
 
     <!-- cdn lib css -->
-    <link rel="stylesheet" href="https://reskr-download.vsplay.com/res_kr/common/sdk/nav/css/nav.3.0.0.css">
+    {% if navCss %}
+    <link rel="stylesheet" href="{{navCss}}"> {% endif %}
 
     <!-- local js -->
     <script src="./js/index.js?rev=@@hash"></script>
@@ -44,7 +49,7 @@
 </head>
 
 <body>
-<p>hello world!</p>
+    <p>hello world!</p>
 
 </body>
 
