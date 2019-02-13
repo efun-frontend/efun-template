@@ -1,0 +1,13 @@
+.page-container {
+  width: 10rem;
+  background-image: url("../images/share-facebook.png"); }
+  .page-container .picture {
+    width: 100%; }
+
+p {
+  font-size: 1rem;
+  -webkit-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out; }
+
+p:hover {
+  color: #fff; }
