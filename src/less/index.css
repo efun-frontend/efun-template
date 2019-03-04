@@ -1,0 +1,12 @@
+#root {
+  width: 100%;
+  min-height: 500px;
+  background: url('../images/logo.png') center center no-repeat;
+  background-size: contain;
+  color: red;
+}
+p {
+  line-height: 100px;
+  font-size: 20px;
+  text-align: center;
+}

@@ -2,33 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-
-    <!-- viewport setting -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="renderer" content="webkit">
-
-    <!-- cache control -->
-    <meta http-equiv="pragma" content="no-cache">
-    <meta http-equiv="cache-control" content="no-cache">
-    <meta http-equiv="expires" content="0">
-
-    <!-- share control *required-->
-    <meta property="og:url" content="请键入您要分享的链接" />
-    <meta property="og:title" content="请键入您要分享的标题" />
-    <meta property="og:description" content="请键入您要分享的描述" />
-    <meta property="og:image" content="请键入您要分享的图片链接" />
-    <!-- 此处提供一个Efun 测试用的 appID: 115441799073400 -->
-    <meta property="fb:app_id" content="请键入您的Facebook应用id" />
-
-    <!-- share control optional -->
-    <meta property="og:type" content="内容的媒体类型" />
-    <meta property="og:locale" content="资源的区域设置。" />
-
-    <!-- local css  -->
-    <link rel="stylesheet" href="./css/index.css?rev=@@hash">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="//g.alicdn.com/fdilab/lib3rd/viewport-units-buggyfill/0.6.2/??viewport-units-buggyfill.hacks.min.js,viewport-units-buggyfill.min.js"></script>
     <!-- cdn lib js -->
     <script src="{{jquery}}"></script>
     <script src="{{bpopup}}"></script>
@@ -40,17 +16,17 @@
     <!-- cdn lib css -->
     {% if navCss %}
     <link rel="stylesheet" href="{{navCss}}"> {% endif %}
-
-    <!-- local js -->
-    <script src="./js/index.js?rev=@@hash"></script>
-
-    <!-- !NOTE  please edit the title of document -->
-    <title>Document</title>
+    <script>
+        window.onload = function () {
+            if (window.viewportUnitsBuggyfill) window.viewportUnitsBuggyfill.init({
+                hacks: window.viewportUnitsBuggyfillHacks
+            });
+        }
+    </script>
 </head>
 
 <body>
-    <p>hello world!</p>
-
+    <div id='root'></div>
 </body>
 
 </html>
